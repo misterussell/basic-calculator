@@ -1,33 +1,78 @@
-function add() {
-  //.value is from the DOM
-  //.valOne + .valTwo are class types assigned to the form elements
-  var x = Number(document.querySelector('.valOne').value);
-  var y = Number(document.querySelector('.valTwo').value);
-  // var y = 2;
-  var delta = (x + y);
-  console.log(delta);
-}
+var mathTotal;
+// Used for direct HTML output
+// var textResult;
 
-document.querySelector('.click').onclick = function () {
-  console.log('test');
+//ADD
+document.querySelector('.add').onclick = function () {
+  // console.log('test');
   var x = Number(document.querySelector('.valOne').value);
   var y = Number(document.querySelector('.valTwo').value);
-  // var y = 2;
+  if (Boolean(x) && Boolean(y)) {
   var delta = (x + y);
-  console.log(delta);
- 
+  // console.log(delta);
+  // mathTotal = delta;
+  document.querySelector('.mathOutput').value = String(delta);
+  } else {
+    alert('One of the numbers input is not an integer');
+    // console.log('No soup for you.');
+    // console.log(Boolean(x), Boolean(y));
+  }
 };
 
-// when querySelector('onclick') onclick
-// function onclick() {
-//   // var x = document.querySelector('.click').onclick;
-//   console.log(x);
-//   if (x !== null) {
-//     console.log("Test");
-//   }
-//   else {
-//     console.log("Nope. Didn't work.");
-//   }
-// }
+//SUBTRACT
+document.querySelector('.subtract').onclick = function () {
+  // console.log('test');
+  var x = Number(document.querySelector('.valOne').value);
+  var y = Number(document.querySelector('.valTwo').value);
+  if (Boolean(x) && Boolean(y)) {
+  var delta = (x - y);
+  // console.log(delta);
+  // mathTotal = delta;
+  document.querySelector('.mathOutput').value = String(delta);
+  } else {
+    alert('One of the numbers input is not an integer');
+    // console.log('No soup for you.');
+    // console.log(Boolean(x), Boolean(y));
+  }
+};
 
-// onclick();
+//MUlTIPLY
+document.querySelector('.multiply').onclick = function () {
+  // console.log('test');
+  var x = Number(document.querySelector('.valOne').value);
+  var y = Number(document.querySelector('.valTwo').value);
+  if (Boolean(x) && Boolean(y)) {
+  var delta = (x * y);
+  // console.log(delta);
+  // mathTotal = delta;
+  document.querySelector('.mathOutput').value = String(delta);
+  } else {
+    alert('One of the numbers input is not an integer');
+    // console.log('No soup for you.');
+    // console.log(Boolean(x), Boolean(y));
+  }
+};
+
+//DIVIDE
+document.querySelector('.divide').onclick = function () {
+  // console.log('test');
+  var x = Number(document.querySelector('.valOne').value);
+  var y = Number(document.querySelector('.valTwo').value);
+  if (Boolean(x) && Boolean(y)) {
+  var delta = (x / y);
+  // console.log(delta);
+  // mathTotal = delta;
+  document.querySelector('.mathOutput').value = String(delta);
+  } else {
+    alert('One of the numbers input is not an integer');
+    // console.log('No soup for you.');
+    // console.log(Boolean(x), Boolean(y));
+  }
+};
+
+//Output to the input box
+// document.querySelector('.mathOutput').textContent = String(mathTotal);
+
+//Output directly to html file
+// var result = "Your result is: " + String(mathTotal);
+// document.querySelector('.resultText').textContent = result;

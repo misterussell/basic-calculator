@@ -1,0 +1,38 @@
+body {
+  background: #99d7d6;
+  color: black;
+  font-family: 'Cormorant Garamond', serif;
+  text-align: center;
+  font-size: 62.5%;
+
+}
+
+h1 {
+  font-size: 2rem;
+  transition: all .5s;
+  display: block;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.cool-button {
+  background: #3F9191;
+  color: white;
+  border-radius: .5rem;;
+  border: 0;
+  transition: all .4s;
+  width: 5.5rem;
+  height: 1.75rem;
+  margin: 0 .5rem;
+}
+
+.cool-button:hover {
+  width: 6rem;
+  height: 2rem;
+}
+
+/*.cool-button:hover h1 {
+  transform: rotate(360deg);
+}*/
